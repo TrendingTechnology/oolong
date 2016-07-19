@@ -27,6 +27,11 @@
               {{/if}}
             </div>
 
+            <div class="nav-center">
+              {{#if @blog.facebook}}<a class="nav-item" href="{{facebook_url @blog.facebook}}"><span class="icon"><i class="fa fa-facebook"></i></span></a>{{/if}}
+              {{#if @blog.twitter}}<a class="nav-item" href="{{twitter_url @blog.twitter}}"><span class="icon"><i class="fa fa-twitter"></i></span></a>{{/if}}
+            </div>
+
             {{navigation}}
           </div>
         </header>
