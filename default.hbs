@@ -13,38 +13,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.0.28/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/5bbf256271.css">
+    <link rel="stylesheet" href="{{asset "css/styles.css"}}">
 
     {{ghost_head}}
   </head>
   <body>
-    <section class="hero is-success">
-      <div class="hero-head">
-        <header class="nav">
-          <div class="container">
-            <div class="nav-left">
-              {{#if @blog.logo}}
-                <a class="nav-item" href=""><img src="{{@blog.logo}}" alt="Logo" width="24px" height="24px"></a>
-              {{/if}}
-            </div>
-
-            <div class="nav-center">
-              {{#if @blog.facebook}}<a class="nav-item" href="{{facebook_url @blog.facebook}}"><span class="icon"><i class="fa fa-facebook"></i></span></a>{{/if}}
-              {{#if @blog.twitter}}<a class="nav-item" href="{{twitter_url @blog.twitter}}"><span class="icon"><i class="fa fa-twitter"></i></span></a>{{/if}}
-            </div>
-
-            {{navigation}}
-          </div>
-        </header>
-      </div>
-
-      <div class="hero-body">
-        <div class="container">
-          {{#if @blog.title}}<h1 class="title">{{@blog.title}}</h1>{{/if}}
-          {{#if @blog.description}}<p class="subtitle">{{@blog.description}}</p>{{/if}}
-        </div>
-      </div>
-    </section>
-
     {{{body}}}
 
     <footer class="footer">

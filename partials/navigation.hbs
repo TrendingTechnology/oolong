@@ -1,5 +1,13 @@
-<div class="nav-right nav-menu">
-  {{#foreach navigation}}
-    <a href="{{url absolute="true"}}" class="nav-item{{#if current}} is-active{{/if}}">{{label}}</a>
-  {{/foreach}}
-</div>
+<nav class="nav has-shadow">
+  <div class="container">
+    <div class="nav-left"></div>
+
+    <div class="nav-center">
+      {{#foreach navigation}}
+        <a href="{{url absolute="true"}}" class="nav-item is-tab{{#if current}} is-active{{/if}}">{{label}}</a>
+      {{/foreach}}
+    </div>
+
+    <div class="nav-right"></div>
+  </div>
+</nav>

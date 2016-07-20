@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="columns">
+    <div class="column is-8 is-offset-2">
+      {{#foreach posts}}
+        <section class="card is-fullwidth has-vertical-margin">
+          <div class="card-content">
+            <div class="media">
+              {{#if author.image}}
+                <div class="media-left">
+                  <figure class="image is-32x32 is-rounded">
+                    {{#author}}<a href="{{url}}"><img src="{{image}}" alt="{{name}}"></a>{{/author}}
+                  </figure>
+                </div>
+              {{/if}}
+              <div class="media-content">
+                {{#author}}<p class="title is-5"><a href="{{url}}">{{name}}</a></p>{{/author}}
+                <p class="subtitle is-6">{{date format="D MMMM YYYY"}}</p>
+              </div>
+            </div>
+
+            <h2 class="title is-4"><a href="{{url}}">{{title}}</a></h2>
+
+            <div class="content is-medium">
+              {{#if meta_description}}{{meta_description}}{{else}}{{content words="40"}}{{/if}}
+            </div>
+
+            <p>{{#foreach tags}}<span class="tag"><a href="{{url}}">{{name}}</a></span> {{/foreach}}</p>
+          </div>
+        </section>
+      {{/foreach}}
+
+      {{pagination}}
+    </div>
+  </div>
+</div>
