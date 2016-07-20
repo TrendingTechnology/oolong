@@ -20,3 +20,12 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+.hljs {
+  /* Need to copy this from Bulma because Highlight.js destroys all the style. */
+  background: #f5f7fa !important;
+  color: #69707a !important;
+  display: block !important;
+  overflow-x: auto !important;
+  padding: 16px 20px !important;
+}
