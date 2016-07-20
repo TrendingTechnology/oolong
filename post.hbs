@@ -1,0 +1,40 @@
+{{!< default}}
+
+{{#post}}
+  <section class="hero is-light">
+    {{> header}}
+
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-vcentered">
+          <div class="column is-8 is-offset-2">
+            <div class="columns is-mobile">
+              <div class="column">
+                <h1 class="title is-3">{{title}}</h1>
+                <p class="subtitle is-5">{{author.name}}</p>
+              </div>
+
+              {{#if author.image}}
+                <div class="column is-narrow">
+                  <figure class="image is-96x96 is-rounded"><img src="{{author.image}}"></figure>
+                </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-8 is-offset-2">
+          <div class="content is-medium">
+            {{content}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{{/post}}

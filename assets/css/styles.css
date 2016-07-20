@@ -1,3 +1,7 @@
+.content pre:not(:last-child) {
+  margin-bottom: 1em;
+}
+
 .is-rounded.is-24x24 img, .image.is-rounded.is-24x24 {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
