@@ -1,3 +1,23 @@
+$family-monospace: "Fira Code", "Source Code Pro", "Monaco", "Inconsolata", monospace
+$family-sans-serif: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif
+
+$green: #43A047
+$green-dark: #2E7D32
+$grey: #9E9E9E
+$grey-dark: #616161
+$light: #F5F5F5
+$primary: $green
+$text: #212121
+
+$background: $light
+$body-background: $light
+$border: $green
+$border-hover: $green-dark
+$code: $text
+$link-active: $green-dark
+$link-hover: $green-dark
+$link-visited: $green
+
 @import "bulma/bulma"
 
 =border-radius($radius)
@@ -5,6 +25,9 @@
   -moz-border-radius:    $radius
   -ms-border-radius:     $radius
   border-radius:         $radius
+
+.title a:hover, .subtitle a:hover
+  border-bottom: none
 
 .content pre:not(:last-child)
   margin-bottom: 1em
@@ -21,3 +44,19 @@
 .card.has-vertical-margin
   margin-top: 20px
   margin-bottom: 20px
+
+.content
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif
+
+  a:visited:hover
+    color: $green-dark
+
+.footer
+  a, a:visited
+    color: $primary
+
+  a:hover, a:visited:hover
+    color: $green-dark
+
+pre, code
+  line-height: 1.5
