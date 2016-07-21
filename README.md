@@ -2,6 +2,16 @@
 
 **Oolong** is a theme for [Ghost](https://ghost.org/) publishing platform based on [Bulma](http://bulma.io/) CSS framework.
 
+## Installation
+
+### Disqus Integration
+
+Go to the *Ghost administration panel* → *Settings* → *Code Injection* → *Blog Header* and put the following tag there:
+
+```
+<meta name="disqus-name" content="YOUR DISQUS NAME">
+```
+
 ## Development
 
 **Oolong** is based on [Bulma](http://bulma.io/documentation/overview/start/).
