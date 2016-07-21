@@ -1,0 +1,19 @@
+<div class="level">
+  <div class="level-left">
+    <div class="level-item">
+      <p>{{#foreach tags}}<span class="tag"><a href="{{url}}">{{name}}</a></span> {{/foreach}}</p>
+    </div>
+  </div>
+  <div class="level-right">
+    <div class="level-item">
+      <div
+        class="ya-share2"
+        data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,lj"
+        data-lang="en"
+        data-title="{{title}}"
+        data-url="{{url absolute=true}}"
+          {{#if image}}data-image="{{image}}"{{/if}}
+      ></div>
+    </div>
+  </div>
+</div>

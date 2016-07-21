@@ -24,7 +24,7 @@
               {{#if meta_description}}{{meta_description}}{{else}}{{content words="40"}}{{/if}}
             </div>
 
-            <p>{{#foreach tags}}<span class="tag"><a href="{{url}}">{{name}}</a></span> {{/foreach}}</p>
+            {{> post-footer}}
           </div>
         </section>
       {{/foreach}}
