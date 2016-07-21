@@ -4,6 +4,8 @@
 
 ## Installation
 
+Clone the repository or unpack the archive into your `ghost/content/themes` directory. Then choose the theme in the Ghost settings.
+
 ### Disqus Integration
 
 Go to the *Ghost administration panel* → *Settings* → *Code Injection* → *Blog Header* and put the following tag there:
