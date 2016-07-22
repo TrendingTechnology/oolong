@@ -28,7 +28,10 @@ Place the following tags via *Code Injection* → *Blog Header*:
 <meta name="linkedin-url" content="LinkedIn URL">
 <meta name="stack-overflow-url" content="StackOverflow URL">
 <meta name="google-plus-url" content="Google+ URL">
+<meta name="github-url" content="GitHub URL">
 ```
+
+Link order is preserved so you can easily reorder the links in the header.
 
 ## Development
 
