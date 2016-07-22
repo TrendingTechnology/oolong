@@ -6,12 +6,28 @@
 
 Clone the repository or unpack the archive into your `ghost/content/themes` directory. Then choose the theme in the Ghost settings.
 
-### Disqus Integration
+### Disqus integration
 
 Go to the *Ghost administration panel* → *Settings* → *Code Injection* → *Blog Header* and put the following tag there:
 
 ```
 <meta name="disqus-name" content="YOUR DISQUS NAME">
+```
+
+### Analytics integration
+
+Place the your `<script>` tags via *Code Injection* → *Blog Footer*.
+
+### Adding other social network links to the header
+
+Place the following tags via *Code Injection* → *Blog Header*:
+
+```
+<meta name="vk-url" content="VKontakte URL">
+<meta name="telegram-url" content="Telegram URL">
+<meta name="linkedin-url" content="LinkedIn URL">
+<meta name="stack-overflow-url" content="StackOverflow URL">
+<meta name="google-plus-url" content="Google+ URL">
 ```
 
 ## Development
