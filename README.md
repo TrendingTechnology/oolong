@@ -2,6 +2,14 @@
 
 **Oolong** is a theme for [Ghost](https://ghost.org/) publishing platform based on [Bulma](http://bulma.io/) CSS framework.
 
+## Features
+
+* Responsible design
+* Custom social network links
+* Disqus support
+* Share buttons
+* Code syntax highlighting
+
 ## Installation
 
 Clone the repository or unpack the archive into your `ghost/content/themes` directory. Then choose the theme in the Ghost settings.
