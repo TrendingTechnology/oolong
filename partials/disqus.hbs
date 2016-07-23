@@ -8,9 +8,8 @@
       (d.head || d.body).appendChild(s);
     };
 
-    var meta = document.querySelector('meta[name=disqus-name]');
-    if (meta !== null) {
-      installDisqus(meta.getAttribute('content'));
+    if (window.disqusName) {
+      installDisqus(window.disqusName);
     }
   })();
 </script>

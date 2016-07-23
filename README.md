@@ -16,30 +16,32 @@ Clone the repository or unpack the archive into your `ghost/content/themes` dire
 
 ### Disqus integration
 
-Go to the *Ghost administration panel* → *Settings* → *Code Injection* → *Blog Header* and put the following tag there:
+Go to the *Ghost administration panel* → *Settings* → *Code Injection* → *Blog Header* and put the following `<script>` tag there:
 
 ```
-<meta name="disqus-name" content="YOUR DISQUS NAME">
+<script>var disqusName = "YOUR DISQUS NAME";</script>
 ```
 
 ### Analytics integration
 
-Place the your `<script>` tags via *Code Injection* → *Blog Footer*.
+Place your analytics `<script>` tags via *Code Injection* → *Blog Footer*.
 
 ### Adding other social network links to the header
 
-Place the following tags via *Code Injection* → *Blog Header*:
+Place the following `<script>` tag via *Code Injection* → *Blog Header*:
 
 ```
-<meta name="vk-url" content="VKontakte URL">
-<meta name="telegram-url" content="Telegram URL">
-<meta name="linkedin-url" content="LinkedIn URL">
-<meta name="stack-overflow-url" content="StackOverflow URL">
-<meta name="google-plus-url" content="Google+ URL">
-<meta name="github-url" content="GitHub URL">
+<script>
+  var customLinks = [
+    {icon: "fa-vk", url: "VKontakte URL"},
+    {icon: "fa-linkedin", url: "LinkedIn URL"},
+    {icon: "fa-github", url: "GitHub URL"},
+    …
+  ];
+</script>
 ```
 
-Link order is preserved so you can easily reorder the links in the header.
+Each entry contains `icon` from [the list of Font Awesome icons](http://fontawesome.io/icons/) and the related `url`.
 
 ## Development
 

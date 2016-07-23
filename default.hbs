@@ -41,35 +41,21 @@
     <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
 
     <script>
-      // Append custom social links to the header.
-      (function () {
-        var appendSocialLink = function (icon, href) {
+      var appendCustomLinks = function (customLinks) {
+        var $navSocial = document.getElementById("nav-social");
+
+        for (var i = 0; i < customLinks.length; i++) {
           var $link = document.createElement("a");
           $link.setAttribute("class", "nav-item");
-          $link.setAttribute("href", href);
-          $link.innerHTML = '<span class="icon"><i class="fa ' + icon + '"></i></span>';
+          $link.setAttribute("href", customLinks[i].url);
+          $link.innerHTML = '<span class="icon"><i class="fa ' + customLinks[i].icon + '"></i></span>';
           $navSocial.appendChild($link);
-        };
-
-        var icons = {
-          "vk-url": "fa-vk",
-          "telegram-url": "fa-paper-plane",
-          "linkedin-url": "fa-linkedin",
-          "stack-overflow-url": "fa-stack-overflow",
-          "google-plus-url": "fa-google-plus",
-          "github-url": "fa-github"
-        };
-
-        var $navSocial = document.getElementById("nav-social");
-        var $metaTags = document.getElementsByTagName("meta");
-
-        for (var i = 0; i < $metaTags.length; i++) {
-          var name = $metaTags[i].getAttribute("name");
-          if (icons[name]) {
-            appendSocialLink(icons[name], $metaTags[i].getAttribute("content"));
-          }
         }
-      })();
+      };
+
+      if (window.customLinks) {
+        appendCustomLinks(customLinks);
+      }
     </script>
 
     {{ghost_foot}}
