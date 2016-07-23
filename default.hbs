@@ -40,23 +40,7 @@
     <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
 
-    <script>
-      var appendCustomLinks = function (customLinks) {
-        var $navSocial = document.getElementById("nav-social");
-
-        for (var i = 0; i < customLinks.length; i++) {
-          var $link = document.createElement("a");
-          $link.setAttribute("class", "nav-item");
-          $link.setAttribute("href", customLinks[i].url);
-          $link.innerHTML = '<span class="icon"><i class="fa ' + customLinks[i].icon + '"></i></span>';
-          $navSocial.appendChild($link);
-        }
-      };
-
-      if (window.customLinks) {
-        appendCustomLinks(customLinks);
-      }
-    </script>
+    <script type="text/javascript" src="{{ asset "js/oolong.js" }}"></script>
 
     {{ghost_foot}}
   </body>

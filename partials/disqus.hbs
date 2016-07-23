@@ -1,15 +1,15 @@
 <div id="disqus_thread"></div>
 <script>
-  (function () {
-    var installDisqus = function(disqusName) {
-      var d = document, s = d.createElement('script');
-      s.src = '//' + disqusName + '.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    };
+    (function () {
+        var installDisqus = function(disqusName) {
+            var d = document, s = d.createElement('script');
+            s.src = '//' + disqusName + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        };
 
-    if (window.disqusName) {
-      installDisqus(window.disqusName);
-    }
-  })();
+        if (window.disqusName) {
+            installDisqus(window.disqusName);
+        }
+    })();
 </script>

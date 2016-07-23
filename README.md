@@ -32,12 +32,12 @@ Place the following `<script>` tag via *Code Injection* → *Blog Header*:
 
 ```
 <script>
-  var customLinks = [
-    {icon: "fa-vk", url: "VKontakte URL"},
-    {icon: "fa-linkedin", url: "LinkedIn URL"},
-    {icon: "fa-github", url: "GitHub URL"},
-    …
-  ];
+    var customLinks = [
+        {icon: "fa-vk", url: "VKontakte URL"},
+        {icon: "fa-linkedin", url: "LinkedIn URL"},
+        {icon: "fa-github", url: "GitHub URL"},
+        …
+    ];
 </script>
 ```
 
