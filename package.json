@@ -1,4 +1,15 @@
 {
-  "name": "Oolong",
-  "version": "0.3.2"
+  "name": "oolong",
+  "version": "1.0.0",
+  "author": {
+    "name": "CodeHat",
+    "email": "dev@codehat.de",
+    "url": "https://www.codehat.de/"
+  },
+  "devDependencies": {
+    "bulma": "^0.6.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-sass": "^3.1.0"
+  }
 }

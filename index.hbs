@@ -1,6 +1,6 @@
 {{!< default}}
 
-<section class="hero is-light">
+<section class="hero is-dark">
   {{> header}}
 
   <div class="hero-body">
@@ -15,20 +15,24 @@
                 <span class="icon"><i class="fa fa-rss"></i></span>
                 <span>Subscribe</span>
               </a>
+              {{#if @blog.facebook}}
+              <a class="button is-primary" href="{{facebook_url @blog.facebook}}">
+                <span class="icon"><i class="fa fa-facebook"></i></span>
+                <span>Facebook</span>
+              </a>
+              {{/if}}
+              {{#if @blog.twitter}}
+              <a class="button is-primary" href="{{twitter_url @blog.twitter}}">
+                <span class="icon"><i class="fa fa-twitter"></i></span>
+                <span>Twitter</span>
+              </a>
+              {{/if}}
             </div>
-
-            {{#if @blog.logo}}
-              <div class="column is-narrow">
-                <figure class="image is-96x96 is-rounded"><img src="{{@blog.logo}}"></figure>
-              </div>
-            {{/if}}
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-{{navigation}}
 
 {{> loop}}

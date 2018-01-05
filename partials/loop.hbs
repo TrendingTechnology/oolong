@@ -5,10 +5,10 @@
         <section class="card is-fullwidth has-vertical-margin">
           <div class="card-content">
             <div class="media">
-              {{#if author.image}}
+              {{#if author.profile_image}}
                 <div class="media-left">
                   <figure class="image is-32x32 is-rounded">
-                    {{#author}}<a href="{{url}}"><img src="{{image}}" alt="{{name}}"></a>{{/author}}
+                    {{#author}}<a href="{{url}}"><img src="{{img_url profile_image}}" alt="{{name}}"></a>{{/author}}
                   </figure>
                 </div>
               {{/if}}

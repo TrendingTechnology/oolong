@@ -1,11 +1,11 @@
-<nav class="pagination">
-  <ul>
+<nav class="pagination" role="navigation" aria-label="pagination">
+  <ul class="pagination-list">
     {{#if prev}}
-      <li><a class="button" href="{{page_url prev}}"><span class="icon"><i class="fa fa-angle-double-left"></i></span></a></li>
+      <li><a class="pagination-link" href="{{page_url prev}}"><span class="icon"><i class="fa fa-angle-double-left"></i></span></a></li>
     {{/if}}
-    <li><a class="button is-primary" href="{{page_url page}}">{{page}}</a></li>
+    <li><a class="pagination-link is-current" href="{{page_url page}}">{{page}}</a></li>
     {{#if next}}
-      <li><a class="button" href="{{page_url next}}"><span class="icon"><i class="fa fa-angle-double-right"></i></span></a></li>
+      <li><a class="pagination-link" href="{{page_url next}}"><span class="icon"><i class="fa fa-angle-double-right"></i></span></a></li>
     {{/if}}
   </ul>
 </nav>
