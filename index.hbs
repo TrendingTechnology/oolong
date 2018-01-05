@@ -11,22 +11,10 @@
             <div class="column">
               {{#if @blog.title}}<h1 class="title is-2">{{@blog.title}}</h1>{{/if}}
               {{#if @blog.description}}<p class="subtitle is-4">{{@blog.description}}</p>{{/if}}
-              <a class="button is-primary" href="{{@blog.url}}/rss/">
+              <a class="button is-rss" href="{{@blog.url}}/rss/">
                 <span class="icon"><i class="fa fa-rss"></i></span>
                 <span>Subscribe</span>
               </a>
-              {{#if @blog.facebook}}
-              <a class="button is-primary" href="{{facebook_url @blog.facebook}}">
-                <span class="icon"><i class="fa fa-facebook"></i></span>
-                <span>Facebook</span>
-              </a>
-              {{/if}}
-              {{#if @blog.twitter}}
-              <a class="button is-primary" href="{{twitter_url @blog.twitter}}">
-                <span class="icon"><i class="fa fa-twitter"></i></span>
-                <span>Twitter</span>
-              </a>
-              {{/if}}
             </div>
           </div>
         </div>

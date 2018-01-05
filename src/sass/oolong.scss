@@ -1,0 +1,53 @@
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+@import "../../node_modules/bulma/sass/utilities/functions";
+
+// TODO:
+
+@import "../../node_modules/bulma/bulma";
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius:    $radius;
+    -ms-border-radius:     $radius;
+    border-radius:         $radius;
+}
+
+.is-rounded.is-24x24 img, .image.is-rounded.is-24x24 {
+    @include border-radius(12px);
+}
+
+.is-rounded.is-32x32 img, .image.is-rounded.is-32x32 {
+    @include border-radius(16px);
+
+}
+
+.is-rounded.is-96x96 img, .image.is-rounded.is-96x96 {
+    @include border-radius(48px);
+}
+
+pre, code {
+    line-height: 1.5;
+}
+
+.button.is-rss {
+    background-color: #f26522;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-facebook {
+    background-color: #3b5998;
+    border-color: transparent;
+    color: #fff;
+}
+
+.button.is-twitter {
+    background-color: #55acee;
+    border-color: transparent;
+    color: #fff;
+}
+
+.pagination {
+    padding-top: 2rem;
+}
+  

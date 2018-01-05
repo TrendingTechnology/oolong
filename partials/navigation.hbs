@@ -1,31 +1,59 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-black" role="navigation" aria-label="main navigation">
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="#">
-        <img src="{{@blog.logo}}" alt="Temp" width="112" height="28">
+        <img src="{{@blog.logo}}" alt="Temp" >
       </a>
 
-      <button class="button navbar-burger" data-target="navbar">
+      {{#if @blog.facebook}}
+      <a class="navbar-item is-hidden-desktop" href="{{facebook_url @blog.facebook}}" target="_blank">
+        <span class="icon" style="color: #3b5998;">
+          <i class="fa fa-lg fa-facebook"></i>
+        </span>
+      </a>
+      {{/if}}
+
+      {{#if @blog.twitter}}
+      <a class="navbar-item is-hidden-desktop" href="{{twitter_url @blog.twitter}}" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-twitter"></i>
+        </span>
+      </a>
+      {{/if}}
+
+      <div class="navbar-burger burger" data-target="navbar">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </div>
     </div>
 
-  <div id="navbar" class="navbar-menu">
+  <div class="navbar-menu"  id="navbar"> 
     <div class="navbar-start">
       {{#foreach navigation}}
         <a href="{{url absolute="true"}}" class="navbar-item{{#if current}} is-active{{/if}}">{{label}}</a>
       {{/foreach}}
     </div>
 
-    <div class="navbar-center"></div>
-
     <div class="navbar-end">
+      {{#if @blog.facebook}}
+      <a class="navbar-item is-hidden-desktop-only" href="{{facebook_url @blog.facebook}}" target="_blank">
+        <span class="icon" style="color: #3b5998;">
+          <i class="fa fa-lg fa-facebook"></i>
+        </span>
+      </a>
+      {{/if}}
+      {{#if @blog.twitter}}
+      <a class="navbar-item is-hidden-desktop-only" href="{{twitter_url @blog.twitter}}" target="_blank">
+        <span class="icon" style="color: #55acee;">
+          <i class="fa fa-lg fa-twitter"></i>
+        </span>
+      </a>
+     {{/if}}
       <div class="navbar-item">
         <div class="field">
           <p class="control">
-            <a class="button is-primary" href="/ghost">
+            <a class="button is-info" href="/ghost">
               <span class="icon">
                 <i class="fa fa-sign-in"></i>
               </span>

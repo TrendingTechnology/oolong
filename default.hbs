@@ -17,11 +17,12 @@
     {{ghost_head}}
   </head>
   <body>
+    {{navigation}}
     {{{body}}}
 
     <footer class="footer">
       <div class="container">
-        <div class="content has-text-centered">
+        <div class="content has-text-centered has-text-grey">
           <p>
             All content copyright <strong>{{@blog.title}}</strong> &copy; {{date format="YYYY"}}<br><br>
             <a href="https://github.com/Pixelhash/oolong">Oolong</a> theme by <a href="https://www.codehat.de">CodeHat</a>.
@@ -36,10 +37,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-
-    <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script>
     <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script>
-
     <script type="text/javascript" src="{{ asset "js/oolong.js" }}"></script>
 
     {{ghost_foot}}
